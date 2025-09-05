@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vamshi Gandhasiri — Portfolio</title>
+  <meta name="description" content="Engineering Management master's student with a CS background. Projects, case studies, and experience." />
+  <meta property="og:title" content="Vamshi Gandhasiri — Portfolio" />
+  <meta property="og:description" content="Engineering Management master's student with a CS background. Projects, case studies, and experience." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root{--bg:#0b1020;--bg-soft:#111833;--card:#121a36;--text:#e5e7eb;--muted:#a5b4fc;--accent:#7c3aed;--chip:#1f2a4a;--shadow:0 10px 30px rgba(0,0,0,.35)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:linear-gradient(180deg,#0b1020, #0b1020 40%, #0c1224 100%);color:var(--text);line-height:1.6}
+    a{color:var(--muted);text-decoration:none} a:hover{opacity:.9}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(10px);background:rgba(11,16,32,.7);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .brand .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#8b5cf6,#22d3ee);box-shadow:var(--shadow)}
+    .links{display:flex;gap:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:var(--accent);color:#fff;font-weight:600;box-shadow:var(--shadow);border:0;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.12);color:var(--text)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:56px 0}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:0 0 12px}
+    .hero p.lead{font-size:clamp(16px,1.7vw,18px);opacity:.9;margin:0 0 22px}
+    .chiprow{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+    .chip{padding:8px 12px;background:var(--chip);border:1px solid rgba(255,255,255,.06);border-radius:999px;font-size:13px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:1fr 1fr}}
+    @media (max-width:650px){.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
+    section{padding:40px 0}
+    h2{font-size:clamp(22px,2.6vw,30px);margin:0 0 14px}
+    .sub{opacity:.8;margin:-6px 0 18px}
+    .proj h3{margin:0 0 6px}
+    .meta{font-size:13px;opacity:.85}
+    .pill{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);display:inline-block;margin:8px 8px 0 0}
+    .footer{opacity:.75;font-size:14px;padding:30px 0 60px}
+    .avatar{width:110px;height:110px;border-radius:20px;background:linear-gradient(135deg,#22d3ee,#8b5cf6);box-shadow:var(--shadow)}
+    .row{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .kpis .k{border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:12px;text-align:center;background:var(--bg-soft)}
+    .kpis .k b{font-size:20px;display:block}
+    .resume{display:flex;gap:12px;flex-wrap:wrap}
+    .contact-list{display:flex;gap:12px;flex-wrap:wrap}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><div class="logo" aria-hidden="true"></div> <span>Vamshi Gandhasiri</span></div>
+      <nav class="links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="btn ghost" href="#resume">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div>
+        <h1>Engineering Management @ SJSU · CS Graduate</h1>
+        <p class="lead">I blend software engineering with business strategy to build data-driven products and streamline operations. Actively seeking internships and co-ops in product, program, or data roles.</p>
+        <div class="chiprow" aria-label="Key skills">
+          <span class="chip">Product & Program Management</span>
+          <span class="chip">Data Analysis</span>
+          <span class="chip">Web Apps</span>
+          <span class="chip">Marketing Ops</span>
+          <span class="chip">Automation</span>
+        </div>
+        <div class="resume">
+          <a class="btn" href="#resume">Download Resume</a>
+          <a class="btn ghost" href="#projects">See Projects</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h3 style="margin:0">Hi, I’m Vamshi 👋</h3>
+            <p style="margin:6px 0 10px;opacity:.9">Currently pursuing an M.S. in Engineering Management at San José State University; previously B.Tech in CSE. I enjoy turning ambiguous problems into measurable outcomes.</p>
+            <div class="kpis">
+              <div class="k"><b>3+</b>Team projects led</div>
+              <div class="k"><b>60 WPM</b>Typing speed</div>
+              <div class="k"><b>2 yrs</b>Biz/marketing exp.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About</h2>
+      <p class="sub">A quick snapshot of who I am and what I’m good at.</p>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Summary</h3>
+          <p>Master’s student in Engineering Management with a strong CS foundation. Experience in accounts and marketing at Iconic Infra (real estate), plus volunteer work at KL University. Open to campus roles and internships where I can combine analytics, product thinking, and execution.</p>
+        </div>
+        <div class="card">
+          <h3>Skills</h3>
+          <p class="meta">Technical</p>
+          <div>
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Excel</span>
+            <span class="pill">Power BI</span>
+            <span class="pill">HTML/CSS/JS</span>
+            <span class="pill">Git/GitHub</span>
+          </div>
+          <p class="meta" style="margin-top:10px">Management</p>
+          <div>
+            <span class="pill">Product Strategy</span>
+            <span class="pill">Roadmapping</span>
+            <span class="pill">Stakeholder Comms</span>
+            <span class="pill">Marketing Ops</span>
+            <span class="pill">Process Improvement</span>
+            <span class="pill">A/B Testing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="sub">Case studies with outcomes. Each has a brief, my role, and links.</p>
+      <div class="grid cols-3">
+        <!-- Project 1 -->
+        <article class="card proj">
+          <h3>Marketing Analytics Dashboard</h3>
+          <p class="meta">Power BI · SQL · Excel</p>
+          <p>Built an end-to-end dashboard for real-estate sales data: cleaned data, modeled KPIs, and automated weekly reporting.</p>
+          <ul>
+            <li>Reduced manual reporting time by <b>70%</b></li>
+            <li>Highlighted top-performing channels → +<b>12%</b> leads QoQ</li>
+          </ul>
+          <p><a href="#" aria-label="Dashboard link">View deck</a> · <a href="#" aria-label="GitHub repo">GitHub</a></p>
+        </article>
+        <!-- Project 2 -->
+        <article class="card proj">
+          <h3>Process Improvement Playbook</h3>
+          <p class="meta">Eng. Mgmt · Ops · Docs</p>
+          <p>Designed a lightweight playbook for intake → prioritization → delivery. Introduced RICE scoring and weekly standups.</p>
+          <ul>
+            <li>Cut average cycle time by <b>25%</b></li>
+            <li>Improved on-time delivery to <b>92%</b></li>
+          </ul>
+          <p><a href="#">Read case study</a></p>
+        </article>
+        <!-- Project 3 -->
+        <article class="card proj">
+          <h3>Campus Services Web App</h3>
+          <p class="meta">HTML/CSS/JS · Firebase</p>
+          <p>Simple app to manage campus club events and resources with role-based access and real-time updates.</p>
+          <ul>
+            <li>150+ student sign-ups in 1st month</li>
+            <li>Automated reminders → higher event turnout</li>
+          </ul>
+          <p><a href="#">Live demo</a> · <a href="#">GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>Iconic Infra Pvt. Ltd. — Accounts & Marketing Manager</h3>
+          <p class="meta">Hyderabad, India · 2023–2025</p>
+          <ul>
+            <li>Managed end-to-end campaign budgets and vendor coordination.</li>
+            <li>Launched weekly KPI reviews; centralized lead tracking.</li>
+            <li>Partnered with sales to align offers with qualified lead patterns.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>KL University — Volunteer</h3>
+          <p class="meta">Student Services · 2022–2024</p>
+          <ul>
+            <li>Organized events and onboarding for 200+ new students.</li>
+            <li>Coordinated between faculty and student committees.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resume / Downloads -->
+    <section id="resume">
+      <h2>Resume & Links</h2>
+      <div class="card">
+        <p>Download a PDF resume and explore more links.</p>
+        <div class="contact-list">
+          <a class="btn" href="assets/Vamshi_Gandhasiri_Resume.pdf" download>Download Resume</a>
+          <a class="btn ghost" href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="#contact">Email Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Let’s connect</h3>
+          <p>Email: <a href="mailto:your.email@sjsu.edu">your.email@sjsu.edu</a></p>
+          <p>Location: San José, CA</p>
+          <p>Open to: Product/Program/Data internships · Work-study</p>
+        </div>
+        <form class="card" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <label> Your Name <br><input name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:var(--bg-soft);color:var(--text)"></label>
+          <br>
+          <label> Your Email <br><input type="email" name="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:var(--bg-soft);color:var(--text)"></label>
+          <br>
+          <label> Message <br><textarea name="message" rows="4" required style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:var(--bg-soft);color:var(--text)"></textarea></label>
+          <br>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p>© <span id="y"></span> Vamshi Gandhasiri · Built with HTML/CSS · Hosted on GitHub Pages</p>
+    </section>
+  </main>
+
+  <script>
+    // Set current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!--
+  ===== Quick Customization Checklist =====
+  1) Replace name, email, and links in: header brand, Resume & Links, and Contact.
+  2) Swap placeholder project links (#) with real GitHub repos / Notion / slides.
+  3) Place your PDF at /assets/Vamshi_Gandhasiri_Resume.pdf (create the folder in repo).
+  4) (Optional) Add a headshot image and use it for .avatar via CSS background-image.
+  5) Tweak colors by editing CSS variables in :root.
+  6) Add more projects by duplicating a <article class="card proj"> block.
+  7) For a custom domain, add a CNAME file with your domain in the repo root.
+  -->
+</body>
+</html>
